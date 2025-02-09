@@ -1,0 +1,170 @@
+fileFormatVersion: 2
+guid: 6666530bd33aa6f40b2f61b85325fff5
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: Robot(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: imagePlane1
+      parentName: Robot(Clone)
+      position: {x: 0.04778645, y: 0.02539, z: 0.019086348}
+      rotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 0.46892834, y: 0.46892834, z: 0.46892834}
+    - name: imagePlane2
+      parentName: Robot(Clone)
+      position: {x: 0.0020682726, y: 0.025392469, z: -0.045485087}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.469, y: 0.469, z: 0.469}
+    - name: head
+      parentName: Robot(Clone)
+      position: {x: -0, y: 0.03656667, z: -0.00022401841}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.9651515, y: 0.9651515, z: 0.97587544}
+    - name: shoulder
+      parentName: Robot(Clone)
+      position: {x: -0, y: 0.028084904, z: -0.00071689003}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.67777777, y: 0.61438686, z: 0.5921317}
+    - name: waist
+      parentName: Robot(Clone)
+      position: {x: -0, y: 0.02440021, z: -0.00050704245}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.18028979, y: 0.2318152, z: 0.18028979}
+    - name: pCylinder2
+      parentName: Robot(Clone)
+      position: {x: -0, y: 0.020315124, z: -0.0014824831}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+      scale: {x: 0.07734221, y: 0.24577636, z: 0.07734221}
+    - name: hip
+      parentName: Robot(Clone)
+      position: {x: -0, y: 0.020537386, z: -0.0005776234}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.49237376, y: 0.38721246, z: 0.45590165}
+    - name: pCylinder4
+      parentName: Robot(Clone)
+      position: {x: -0.0029689483, y: 0.01654785, z: -0.0014809106}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.049572755, y: 0.30802238, z: 0.049572755}
+    - name: pCylinder6
+      parentName: Robot(Clone)
+      position: {x: -0.0029547468, y: 0.012222721, z: -0.0014719496}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+      scale: {x: 0.12293103, y: 0.07192773, z: 0.11769993}
+    - name: pCube3
+      parentName: Robot(Clone)
+      position: {x: -0.0029547128, y: 0.0018750142, z: -0.00013017461}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.42549434, y: 0.39860547, z: 0.8364326}
+    - name: hand
+      parentName: Robot(Clone)
+      position: {x: -0.017665068, y: 0.029678788, z: -0.0017595425}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.17933334, y: 0.09812458, z: 0.2602779}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 77810ac7f7ed2b44eb0b6f4aecceead5,
+    type: 3}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 2
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
