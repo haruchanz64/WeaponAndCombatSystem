@@ -57,10 +57,12 @@ public class PlayerCombat : MonoBehaviour
         Debug.Log($"Performing attack step {step}");
 
         // Construct the animation name
-        string animationName = "Great Sword Slash" + (step == 1 ? "" : step);
+        var animationName = "Great Sword Slash" + (step == 1 ? "" : step);
 
         yield return new WaitUntil(() => !animator.GetCurrentAnimatorStateInfo(0).IsName(animationName));
 
+        
+        
         isAttacking = false;
 
         currentComboCoroutine = StartCoroutine(ComboTimer());
