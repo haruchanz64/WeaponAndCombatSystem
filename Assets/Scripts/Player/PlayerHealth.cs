@@ -72,7 +72,10 @@ public class PlayerHealth : MonoBehaviour
     private void OnUpdateHealth()
     {
         healthBarImage.fillAmount = currentHealth / maxHealth;
-        healthText.SetText($"{currentHealth}/{maxHealth}");
+        healthText.SetText($"{(int) currentHealth}/{ (int) maxHealth}");
+
+        // Update health bar color based on current health
+        UpdateHealthBarColor();
 
         // Check for player death
         if (currentHealth <= 0)
@@ -81,10 +84,34 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    private void UpdateHealthBarColor()
+    {
+        if (currentHealth > 60)
+        {
+            healthBarImage.color = Color.green; // Green for health 100 to 60
+        }
+        else if (currentHealth > 30)
+        {
+            healthBarImage.color = Color.yellow; // Yellow for health 60 to 30
+        }
+        else if (currentHealth > 10)
+        {
+            healthBarImage.color = new Color(1f, 0.647f, 0f); // Orange for health 30 to 10 (RGB for orange)
+        }
+        else if (currentHealth > 0)
+        {
+            healthBarImage.color = Color.red; // Red for health 10 to 1
+        }
+        else
+        {
+            healthBarImage.color = Color.clear; // Optional: Clear or a specific color for 0 health
+        }
+    }
+
     public void OnTakeDamage(float damage)
     {
-        // Check if the player is already hurt
-        if (isHurt) return;
+        // Check if the player is already hurt or dodging
+        if (isHurt || playerMovement.IsBlocking() || playerMovement.IsDodging()) return;
 
         // Set hurt status and play hurt animation
         isHurt = true;

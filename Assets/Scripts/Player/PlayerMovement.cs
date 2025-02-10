@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 velocity;
     private bool isPlayerGrounded;
     private bool isDodging = false;
+    private bool isBlocking = false; // New variable to track blocking state
 
     private void Start()
     {
@@ -27,11 +28,12 @@ public class PlayerMovement : MonoBehaviour
     {
         HandleMovement();
         HandleDodge();
+        HandleBlocking(); // Handle blocking input
     }
 
     private void HandleMovement()
     {
-        if (isDodging) return; // Prevent movement while dodging
+        if (isDodging || isBlocking) return; // Prevent movement while dodging or blocking
 
         // Update grounded status
         isPlayerGrounded = IsPlayerGrounded();
@@ -116,5 +118,29 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetBool("Dodge", false); // Reset dodge animation
         isDodging = false; // Reset dodging status
+    }
+
+    private void HandleBlocking()
+    {
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            isBlocking = true;
+            animator.SetBool("Blocking", true); // Set blocking animation
+        }
+        else
+        {
+            isBlocking = false;
+            animator.SetBool("Blocking", false); // Reset blocking animation
+        }
+    }
+
+    public bool IsBlocking()
+    {
+        return isBlocking; // Method to check if the player is blocking
+    }
+
+    public bool IsDodging()
+    {
+        return isDodging;
     }
 }
